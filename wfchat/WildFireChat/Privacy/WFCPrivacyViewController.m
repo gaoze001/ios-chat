@@ -22,9 +22,10 @@
     
     NSString *path;
     if (self.isPrivacy) {
-        path = @"http://www.wildfirechat.cn/firechat_user_privacy.html";
+        //http://www.3x5y.com:8888/send_code
+        path = @"http://www.3x5y.com:8888/firechat_user_privacy.html";
     } else {
-        path = @"http://www.wildfirechat.cn/firechat_user_agreement.html";
+        path = @"http://www.3x5y.com:8888/firechat_user_agreement.html";
     }
     [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:path]]];
     
